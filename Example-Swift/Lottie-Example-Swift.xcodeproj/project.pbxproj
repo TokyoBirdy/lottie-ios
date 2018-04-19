@@ -21,6 +21,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		16EC5DE8208882EA008F6244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16EC5DE1208882E9008F6244 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 62CA59B81E3C173B002D7188;
+			remoteInfo = Lottie_iOS;
+		};
+		16EC5DEA208882EA008F6244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16EC5DE1208882E9008F6244 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FAE1F7E61E428CBE002E0974;
+			remoteInfo = Lottie_macOS;
+		};
+		16EC5DEC208882EA008F6244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16EC5DE1208882E9008F6244 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C5379761FB471D100C1BC65;
+			remoteInfo = Lottie_tvOS;
+		};
+		16EC5DEE208882EA008F6244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 16EC5DE1208882E9008F6244 /* Lottie.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84FE12EF1E4C1485009B157C;
+			remoteInfo = LottieLibraryIOS;
+		};
 		62E4701C1FFEB817000C97B5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 62E46FFF1FFEB817000C97B5 /* Project object */;
@@ -37,7 +65,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		16EC5DE020888180008F6244 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		16EC5DE1208882E9008F6244 /* Lottie.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lottie.xcodeproj; path = ../Lottie.xcodeproj; sourceTree = "<group>"; };
+		16EC630C2088A08A008F6244 /* Lottie-Example-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lottie-Example-Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A4342E1787B079213282322 /* Pods_Lottie_Example_SwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lottie_Example_SwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20DA0C04546E7992E527B7A4 /* Pods-Lottie-Example-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie-Example-Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lottie-Example-Swift/Pods-Lottie-Example-Swift.release.xcconfig"; sourceTree = "<group>"; };
 		460DDCDD3AFBBA2F71F388CA /* Pods-Lottie-Example-SwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lottie-Example-SwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lottie-Example-SwiftTests/Pods-Lottie-Example-SwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -91,9 +134,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16EC5DE2208882E9008F6244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				16EC5DE9208882EA008F6244 /* Lottie.framework */,
+				16EC5DEB208882EA008F6244 /* Lottie.framework */,
+				16EC5DED208882EA008F6244 /* Lottie.framework */,
+				16EC5DEF208882EA008F6244 /* libLottie.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		20AE78C884C63667929F3B84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				16EC5DE1208882E9008F6244 /* Lottie.xcodeproj */,
 				9AF2B492C19B7F0F7B82952F /* Pods_Lottie_Example_Swift.framework */,
 				1A4342E1787B079213282322 /* Pods_Lottie_Example_SwiftTests.framework */,
 				4918778B6A64403F2EE0C7B6 /* Pods_Lottie_Example_SwiftUITests.framework */,
@@ -146,6 +201,7 @@
 				62E470381FFED448000C97B5 /* Boat_Loader.json */,
 				62E470131FFEB817000C97B5 /* LaunchScreen.storyboard */,
 				62E470161FFEB817000C97B5 /* Info.plist */,
+				16EC630C2088A08A008F6244 /* Lottie-Example-Swift-Bridging-Header.h */,
 			);
 			path = "Lottie-Example-Swift";
 			sourceTree = "<group>";
@@ -181,6 +237,7 @@
 				62E470051FFEB817000C97B5 /* Resources */,
 				59170CEDFD10DC9C02A1814F /* [CP] Embed Pods Frameworks */,
 				9615C08B49383EBBD4EFEED6 /* [CP] Copy Pods Resources */,
+				16EC5DE020888180008F6244 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,6 +302,7 @@
 				TargetAttributes = {
 					62E470061FFEB817000C97B5 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					62E4701A1FFEB817000C97B5 = {
@@ -270,6 +328,12 @@
 			mainGroup = 62E46FFE1FFEB817000C97B5;
 			productRefGroup = 62E470081FFEB817000C97B5 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 16EC5DE2208882E9008F6244 /* Products */;
+					ProjectRef = 16EC5DE1208882E9008F6244 /* Lottie.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				62E470061FFEB817000C97B5 /* Lottie-Example-Swift */,
@@ -278,6 +342,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		16EC5DE9208882EA008F6244 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = 16EC5DE8208882EA008F6244 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16EC5DEB208882EA008F6244 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = 16EC5DEA208882EA008F6244 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16EC5DED208882EA008F6244 /* Lottie.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Lottie.framework;
+			remoteRef = 16EC5DEC208882EA008F6244 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		16EC5DEF208882EA008F6244 /* libLottie.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLottie.a;
+			remoteRef = 16EC5DEE208882EA008F6244 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		62E470051FFEB817000C97B5 /* Resources */ = {
@@ -618,11 +713,16 @@
 			baseConfigurationReference = BC7D0747611BEF491A6A96A1 /* Pods-Lottie-Example-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HZQ256W5V3;
 				INFOPLIST_FILE = "Lottie-Example-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "d.Lottie-Example-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = d.cecilia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lottie-Example-Swift/Lottie-Example-Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -633,11 +733,15 @@
 			baseConfigurationReference = 20DA0C04546E7992E527B7A4 /* Pods-Lottie-Example-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HZQ256W5V3;
 				INFOPLIST_FILE = "Lottie-Example-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "d.Lottie-Example-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = d.cecilia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lottie-Example-Swift/Lottie-Example-Swift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
